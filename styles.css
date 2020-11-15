@@ -1,0 +1,24 @@
+h1 {
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+}
+.header {
+         color: Blue;
+}
+#list {
+    color: red;
+}
+.main {
+    margin-left: 10px; margin-right: 300px; 
+}
+span img {
+    float: right;
+}
+span small {
+    display: block;
+}
+
+div#steelers:hover {
+    background: url(https://www.mavs.com/) 0 0px no-repeat;
+
+    }
