@@ -1,0 +1,63 @@
+table .loan_table, td, th{
+    border: solid 1px  #add8e6;
+    margin:0px;
+    padding:0px;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    line-height: 22px;
+    font-size: 13px;
+    font-family: Arial, Verdana, Tahoma, Helvetica, sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color:black;
+}
+
+table .header_table {
+    font-size: 13px;
+    font-family: Arial, Verdana, Tahoma, Helvetica, sans-serif;
+    background-color:#98dcff;
+    font-weight: 900;
+}
+
+table th {
+    /* table-layout: 125px; */
+    /* width: 50%;  */
+    /* border-collapse: collapse; */
+    font-weight: 700;
+}
+
+th {
+    text-align: center;
+    min-width: 150px;
+    word-wrap: break-word;
+}
+td {
+    max-width: 500px;
+    min-width: 200px;
+    overflow: auto;
+}
+
+.create_button {
+    font-size: 13px;
+    font-family: Arial, Verdana, Tahoma, Helvetica, sans-serif;
+    background-color:#98dcff;
+    border: solid 1px  #adbae6;
+    margin:3px;
+    padding:6px;
+    border-spacing: 0px #98dcff;
+    font-weight: 700;
+}
+
+.crumbs {
+    font-size: 13px;
+    font-family: Arial, Verdana, Tahoma, Helvetica, sans-serif;
+    line-height:22px;
+    background-color:#98dcff;
+    border: solid 1px  #adbae6;
+    margin:10px;
+    padding:6px;
+    border-spacing: 0px #98dcff;
+    font-weight: 700;
+    text-align: center;
+}
+
