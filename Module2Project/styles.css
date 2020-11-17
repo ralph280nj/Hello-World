@@ -61,3 +61,8 @@ td {
     text-align: center;
 }
 
+.main {
+    max-width: 80%;
+    margin: auto;
+}
+
