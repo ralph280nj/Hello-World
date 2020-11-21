@@ -5,6 +5,49 @@
     <title>Device Request Form</title>
 </head>
 <body>
-    
+    <nav class="crumbs">
+        <a href="DeviceLoansMain.html">Home</a>
+        <a href="SupportContacts.pdf" target="pdf-frame">Contact Support</a>
+    </nav>
+<div class="main">
+    <main>
+        <h1>New Request</h1>
+        <h4>Please use this form to request a device. A ticket will be created and you will receive an email confirmation.</h4>
+        <!--div>
+            <button class="submit_button" type="button">Submit Request</button>
+            <button class="cancel_button" type="button">Cancel</button>
+        </div-->
+        <br><br>
+        <form>
+            <input type="submit" formaction="/Git_Repos/HelloWorld/Module2Project/DeviceLoansMain.html" value="Submit Request">
+            <input type="reset" value="Clear Form">
+            <input type="submit" formaction="/Git_Repos/HelloWorld/Module2Project/DeviceLoansMain.html" value="Cancel"><br><br>
+            <label for="requestor">Requestor:</label><br>
+            <input type="text" id="requestor" name="requestor"><br><br>
+            <label for="recipient">Recipient Name:</label><br>
+            <input type="text" id="recipient" name="recipient"><br><br>
+            <label for="devices">Select a Device:</label><br>
+                <select id="devices" name="devices" >
+                    <option value="laptop">Laptop</option>
+                    <option value="projector">Projector</option>
+                    <option value="USB">USB Drive</option>
+                    <option value="board">Whiteboard</option>
+                </select><br>
+            <label for="needby">Need By:</label><br>
+            <input type="date" id="needby" name="needby"><br><br>
+            <label for="returndate">Date Due Back:</lable><br>
+            <input type="date" id="returndate" name="returndate"><br><br>   
+            <label for="comments">Comments:</label><br>
+            <textarea rows="5" cols="40" name="comments"></textarea><br><br>
+            <input type="submit" formaction="/Git_Repos/HelloWorld/Module2Project/DeviceLoansMain.html" value="Submit Request">
+            <input type="reset" value="Clear Form">
+            <input type="submit" formaction="/Git_Repos/HelloWorld/Module2Project/DeviceLoansMain.html" value="Cancel">
+         </form>
+         <!--div>
+            <button class="submit_button" type="button">Submit Request</button>
+            <button class="cancel_button" type="button">Cancel</button>
+        </div-->         
+    </main>
+</div>
 </body>
 </html>
