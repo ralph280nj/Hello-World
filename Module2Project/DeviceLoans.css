@@ -4,6 +4,7 @@ body {
        padding: 0;
        margin: 0;
        width: 80%;
+       min-width: 50%;
        margin: auto;
 }
 table .loan_table, td, th{
@@ -18,73 +19,82 @@ table .loan_table, td, th{
         color:black;
 }
 table .header_table {
-font-size: 13px;
-background-color:#98dcff;
-font-weight: 900;
+        font-size: 13px;
+        background-color:#98dcff;
+        font-weight: 900;
 }
 tbody td {
-padding-left: 12px;
+        padding-left: 12px;
 }
 th {
-font-weight: 750;        
-text-align: center;
-min-width: 50px;
-word-wrap: break-word;
+        font-weight: 750;        
+        text-align: center;
+        min-width: 50px;
+        word-wrap: break-word;
 }
 td {
-max-width: 500px;
-min-width: 200px;
-line-height: 30px;
-overflow: auto;
+        max-width: 500px;
+        min-width: 200px;
+        line-height: 30px;
+        overflow: auto;
 }
 .loan_table{
-display: flexbox;
-width: 100%;
-border-collapse: collapse;
+        display: flexbox; /*sets how item will grow or shrink to fit in container. */
+        width: 100%;
+        min-width: 0;
+        background-color:#f8f8f8;
+        border-collapse: collapse;
 }
 .crumbs {
-font-size: 13px;
-/* font-family: Arial, Verdana, Tahoma, Helvetica, sans-serif; */
-line-height:22px;
-background-color:#98dcff;
-border: solid 1px  #adbae6;
-margin:10px;
-padding:6px;
-border-spacing: 0px #98dcff;
-font-weight: 700;
-text-align: center;
-display: flex;
-justify-content: right;
+        font-size: 13px;
+        line-height:22px;
+        background-color:#98dcff;
+        border: solid 1px  #adbae6;
+        padding:6px;
+        margin-top: 5em;
+        border-spacing: 0px #98dcff;
+        font-weight: 700;
+        text-align: center;
+        display: flex;  /*works similar to float. */
+        justify-content: right;
 }
 .crumbs a {
-margin: 4px;
-/* font-family: Arial, Verdana, Tahoma, Helvetica, sans-serif; */
+        margin: 4px;
+}
+.request {
+        width: 30%;
+        position: relative;
+        left: 4px;    
+}
+.support {
+        float: right;
+        position: relative;
+        left: 500px;
 }
 #MainCreateRequestButton {
-margin: 4px 0;
-padding-bottom: .5em;
-width: 100%;
-line-height: 22px;
-cursor: pointer;
+        margin: 4px 0;
+        padding-bottom: .5em;
+        width: 100%;
+        line-height: 22px;
+        cursor: pointer;
 }
 #devices {
-display: block;
-font-size: 14px;
-/* font-family: Arial, Verdana, Tahoma, Helvetica, sans-serif; */
-font-weight: 200;
-line-height: 1.3;
-padding: .6em 1.4em .5em .8em;
-width: 100%;
-max-width: 100%; /* useful when width is set to anything other than 100% */
-box-sizing: border-box;
-margin: 0;
-border: 2px solid silver;
-box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
-border-radius: .5em;
--moz-appearance: none;
--webkit-appearance: none;
-appearance: none;
-background-color: #f8f8f8;
+        display: block;
+        font-size: 14px;
+        font-weight: 200;
+        line-height: 1.3;
+        padding: .6em 1.4em .5em .8em;
+        width: 100%;
+        max-width: 100%; /* useful when width is set to anything other than 100% */
+        box-sizing: border-box;
+        margin: 0;
+        border: 2px solid silver;
+        box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+        border-radius: .5em;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background-color: #f8f8f8;
 }
 input{
         border: 2px solid silver;
@@ -97,27 +107,25 @@ input{
         font-family: Arial, Verdana, Tahoma, Helvetica, sans-serif;
 }
 textarea{
-width: 100%;
-height: 150px;
-padding: 12px 20px;
-box-sizing: border-box;
-border: 2px solid silver;
-background-color: #f8f8f8;
-border-radius: 4px;
-resize: none;
-cursor: pointer;
-/* font-family: Arial, Verdana, Tahoma, Helvetica, sans-serif; */
+        width: 100%;
+        height: 150px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid silver;
+        background-color: #f8f8f8;
+        border-radius: 4px;
+        resize: none;
+        cursor: pointer;
 }
 input[type=reset], input[type=submit] {
-background-color:  #98dcff;
-border: none;
-color:black;
-padding: 16px 32px;
-text-decoration: none;
-margin: 4px 2px;
-cursor: pointer;
-border-radius: 4px;
-width: 15%; 
-font-family: Arial, Verdana, Tahoma, Helvetica, sans-serif; 
-font-weight: 800; 
+        background-color:  #98dcff;
+        border: none;
+        color:black;
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+        width: 15%; 
+        font-weight: 800; 
 }
