@@ -1,6 +1,7 @@
 body {
-       background-color: rgb(241, 237, 237);
+       background-color:#c2fbfe;
        font-family: Arial, Helvetica, sans-serif;
+       font-size: 12px;
        padding: 0;
        margin: 0;
        width: 80%;
@@ -19,15 +20,18 @@ table .loan_table, td, th{
         color:black;
 }
 table .header_table {
-        font-size: 13px;
-        background-color:#98dcff;
+        font-family: "Times New Roman", Times, serif, Arial, sans-serif;
+        font-size: 14px;
         font-weight: 900;
+        background-color:#98dcff;
 }
 tbody td {
         padding-left: 12px;
 }
 th {
-        font-weight: 750;        
+        font-family: "Times New Roman", Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 900;        
         text-align: center;
         min-width: 50px;
         word-wrap: break-word;
@@ -59,7 +63,10 @@ td {
         justify-content: right;
 }
 .crumbs a {
-        margin: 4px;
+           margin: 4px;
+           font-family: Helvetica, Arial, sans-serif;
+           font-size: 14px;
+           font-weight: 900; 
 }
 .request {
         width: 30%;
@@ -105,7 +112,9 @@ input{
         line-height: 22px;
         background-color: #f8f8f8;
         cursor: pointer;
-        font-family: Arial, Verdana, Tahoma, Helvetica, sans-serif;
+        font-family: "Times New Roman", Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 900; 
 }
 textarea{
         width: 100%;
