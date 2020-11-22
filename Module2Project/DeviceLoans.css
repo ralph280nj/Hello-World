@@ -4,7 +4,7 @@ body {
        padding: 0;
        margin: 0;
        width: 80%;
-       min-width: 50%;
+       /* min-width: 50%; */
        margin: auto;
 }
 table .loan_table, td, th{
@@ -41,7 +41,7 @@ td {
 .loan_table{
         display: flexbox; /*sets how item will grow or shrink to fit in container. */
         width: 100%;
-        min-width: 0;
+        /* min-width: 0; */
         background-color:#f8f8f8;
         border-collapse: collapse;
 }
@@ -63,13 +63,14 @@ td {
 }
 .request {
         width: 30%;
-        position: relative;
-        left: 4px;    
+        /* position: relative;
+        left: 4px;     */
 }
 .support {
         float: right;
-        position: relative;
-        left: 500px;
+        padding-left: 40em;
+        /* position: relative;
+        left: 500px; */
 }
 #MainCreateRequestButton {
         margin: 4px 0;
