@@ -1,0 +1,159 @@
+/* navigation right justified will go vertical for small screens */
+/* large screens */
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  list-style: none;
+  margin: 0;
+  background: deepskyblue;
+}
+ul {
+  padding: 0;
+}
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+}
+
+.navigation a:hover {
+  background: #1565c0;
+}
+/* medium screens */
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+/* small screens display vertical*/
+@media all and (max-width: 600px) {
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .navigation a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+.flex-container {
+  /* We first create a flex layout context */
+  display: flex;
+
+  /* Then we define the flow direction 
+       and if we allow the items to wrap 
+     * This is the same as:
+     * flex-direction: row;
+     * flex-wrap: wrap;
+     */
+  flex-flow: row wrap;
+
+  /* Then we define how is distributed the remaining space */
+  justify-content: normal;
+
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.flex-item {
+  background: tomato;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 50px;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+  border-style: solid;
+  border-color: lightblue;
+}
+
+/* 
+  Header Styles
+ */
+.header {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3px;
+}
+.brand_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-grow: 2;
+  border: 1px red solid;
+}
+
+.brand_container__image {
+  height: 125px;
+  width: 125px;
+}
+
+.brand_container h1 {
+  margin-left: 50px;
+}
+/* 
+  Right Side Actions
+ */
+.right-side-actions {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.actions ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0;
+  flex-grow: 1;
+}
+.actions ul li {
+  display: inline;
+}
+
+.shopping-bag-img {
+  width: 50px;
+  height: 50px;
+}
+/* 
+  Search Ba
+ */
+.search-bar {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.search-bar input {
+  height: 30px;
+}
+
+/*
+  Product Cards
+*/
+.product-card-grid__container {
+  display: flex;
+  flex-flow: row wrap;
+}
+.product-card img {
+  min-height: 150px;
+  min-width: 150px;
+  max-height: 300px;
+  max-width: 200px;
+}
