@@ -93,7 +93,7 @@ ul {
   flex-direction: row;
   align-items: center;
   flex-grow: 2;
-  border: 1px red solid;
+  /* border: 1px red solid; */
 }
 
 .brand_container__image {
@@ -139,7 +139,7 @@ ul {
   margin: 00px;
 }
 /* 
-  Search Ba
+  Search Bar
  */
 .search-bar {
   display: flex;
@@ -158,6 +158,7 @@ ul {
 .product-card-grid__container {
   display: flex;
   flex-flow: row wrap;
+  margin-top: 10px;
 }
 .product-card img {
   margin-right: 45px;
@@ -167,6 +168,32 @@ ul {
   max-width: 200px;
 }
 .description {
-  margin: 0px;
+   margin: 0px;
   padding: 0px;
+}
+.discount {
+  color: red;
+  border-bottom: 0px;
+}
+.final-price {
+  margin: 0px;
+  border-top: 0px;
+  font-weight: 700;
+}
+.promotional-banner-container {
+  display: block;
+  background: lightblue;
+  padding: 20px; 
+  text-align: center;
+}
+.promo-discount {
+  font-weight: 700;
+}
+.promo-description {
+}
+.promo {
+  display: flex;
+}
+.promo-cards {
+  flex: 50%;
 }
