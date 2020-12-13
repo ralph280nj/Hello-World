@@ -282,9 +282,9 @@ margin-left: 100px;
 .promo-discount {
   font-weight: 700;
 }
-/* .promo-description {
+/* .promo-description2 {
 } */
-#promo {
+ #promo {
   display: grid;
   grid-template-columns: repeat(2,1fr);
   grid-template-rows: repeat(2, 1fr minmax(150px,auto));
