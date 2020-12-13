@@ -4,10 +4,10 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  padding-bottom: 10px;
   list-style: none;
   margin: 0;
   background: deepskyblue;
+
 }
 ul {
   padding: 0;
@@ -18,7 +18,9 @@ ul {
   padding: 1em;
   color: white;
 }
-
+.navigation li {
+  text-align: center;
+}
 .navigation a:hover {
   background: #1565c0;
 }
@@ -107,12 +109,12 @@ ul {
 /* 
   Right Side Actions
  */
-.right-side-actions {
+.right-side-actions{
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
-.actions ul {
+.actions ul{
   list-style: none;
   display: flex;
   align-items: center;
@@ -122,8 +124,14 @@ ul {
 .actions ul li {
   display: inline;
 }
-
-.shopping-bag-img {
+.actions li :hover{
+  background: #1565c0;
+}
+.actions ul li a:hover{
+  color: white;
+  padding: 10px;
+}
+.shopping-bag-img{
   width: 50px;
   height: 50px;
   border-width: 0px;
@@ -185,6 +193,7 @@ ul {
   background: lightblue;
   padding: 20px; 
   text-align: center;
+  font-size: 20px;
 }
 .promo-discount {
   font-weight: 700;
@@ -220,6 +229,7 @@ ul {
   object-fit: cover ;
   width: 100%;
   max-height: 100% ;
+
 } 
 .promo-card3{
   /* grid-column: 1/3; */
@@ -232,21 +242,22 @@ ul {
 } 
 .promo-card4{
   grid-column: 2/3;
-  grid-row: 2/4;
+  grid-row: 3/4;
 }
 .promo-card4 > img {
   object-fit: cover ;
   width: 100%;
   max-height: 100% ;
 } 
-.promo-card5{
-  /* grid-column: 3/7; */
+ .promo-card5{
+  /* grid-column: 1/3;
+  grid-row: 2 / 3; */
 }
 .promo-card5 > img {
   object-fit: cover ;
   width: 100%;
   max-height: 100% ;
-} 
+}  
 .promo-card6{
    grid-row: 4/5;  
    grid-column: 2/3;
@@ -255,4 +266,14 @@ ul {
   object-fit: cover ;
   width: 100%;
   max-height: 100% ;
+}
+.promo-description2{
+  grid-column: 2 / 3;
+  grid-row: 2 /3;
+  background: turquoise;
+  color: seagreen;
+  text-align: center;
+  font-size: 48px ;
+
+  /* opacity: ; */
 }
