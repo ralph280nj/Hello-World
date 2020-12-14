@@ -101,10 +101,11 @@ ul {
 .brand_container__image {
   height: 125px;
   width: 125px;
+  margin-left: 100px;
 }
 
 .brand_container h1 {
-  margin-left: 50px;
+  margin-left: 1350px;
 }
 /*
 Right Side Actions
@@ -121,6 +122,7 @@ margin-left: 100px;
   align-items: center;
   justify-content: space-evenly;
   flex-grow: 1;
+  min-width: 300px;
 }
 .actions ul li {
   display: inline;
@@ -153,7 +155,6 @@ margin-left: 100px;
 .search-bar {
   display: flex;
   width: 100%;
-  height: 100%;
   flex-grow: 1;
   align-items: center;
   justify-content: flex-end;
@@ -164,7 +165,7 @@ margin-left: 100px;
 #product-card-grid-container {
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  grid-template-rows: repeat(2, 1fr minmax(150px,auto));
+  grid-template-rows: repeat(auto-fill, minmax(150px,auto));
   grid-gap: 10px;
   max-width: 2000px;
   margin: 0 auto;
@@ -248,15 +249,6 @@ margin-left: 100px;
   width: 100%;
   max-height: 100%;
 }
-/* .product-card9 {
-  grid-column: 5 / 6;
-  grid-row: 2 / 3;
-}
-.product-card9 > img {
-  object-fit: cover;
-  width: 100%;
-  max-height: 100%;
-} */
 .description {
    margin: 0px;
   padding: 0px;
