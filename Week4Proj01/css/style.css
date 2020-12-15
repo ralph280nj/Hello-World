@@ -105,7 +105,9 @@ ul {
 }
 
 .brand_container h1 {
-  margin-left: 1350px;
+  width: 100%;
+  text-align: center;
+  margin-left: 30px;
 }
 /*
 Right Side Actions
