@@ -3,17 +3,35 @@
 
 <head>
     <title>Contoso News</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
 
-<body>
+<body class="container">
     <header>
         <h1>Contoso News</h1>
         <h2>On Time, On Topic</h2>
     </header>
-    <main>
+    <section id="carousel">
+        <figure class="visible">
+            <img src="img/efficient_cars.png" alt="Efficient Cars" />
+            <figcaption>2017 Cars promise to be More Fuel Efficient Than Ever</figcaption>
+        </figure>
+        <figure>
+            <img src="img/natural_disaster.png" alt="Natural Disaster" />
+            <figcaption>Hurricane Threatens to Touch Down on the East Coast This Weekend</figurecaption>
+        </figure>
+        <figure>
+            <img src="img/health_records.png" alt="Health Records" />
+            <figcaption>Many Doctors are Moving to Digital Health Records This Year</figurecaption>
+        </figure>
+    </section>
+    <main class="row">
         <h3>Latest Articles</h3>
-        <article>
+        <article class="well col-md-4">
             <time datetime="16-01-2016">Friday, Jan 16</time>
             <h4>International Story</h4>
             <p>Curabitur pharetra luctus augue, non posuere orci tristique vel. Sed posuere nisi nec lacus ullamcorper,
@@ -25,7 +43,7 @@
                 <a href="#" target="_blank">Read More</a>
             </p>
         </article>
-        <article>
+        <article class="well col-md-4">
             <time datetime="14-01-2016">Wednesday, Jan 14</time>
             <h4>Finance Story</h4>
             <p>
@@ -48,7 +66,7 @@
                 <a href="#" target="_blank">Read More</a>
             </p>
         </article>
-        <article>
+        <article class="well col-md-4">
             <time datetime="14-01-2016">Wednesday, Jan 14</time>
             <h4>Technology Story</h4>
             <p>Morbi eget justo ut velit dapibus malesuada. Nunc elementum, neque quis convallis tempus, lacus ante
@@ -61,9 +79,9 @@
             </p>
         </article>
     </main>
-    <h4>Sign Up For Our Emails</h4>
-    <summary>
-        <form action="">
+    <div class="panel-heading">Sign Up For Our Emails</div>
+    <summary class="panel panel-default col-md-8 col-md-offset-2">
+        <form class="form-horizontal panel-body">
             <label>E-mail Address: </label>
             <input type="text" required="required" />
             <label>Delivery Preference: </label>
